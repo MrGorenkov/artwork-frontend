@@ -1,0 +1,42 @@
+.cart-container {
+  display: inline-block;
+  position: relative;
+}
+
+.cart-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+}
+
+.cart-icon {
+  width: 50px;
+  height: auto;
+}
+
+/* Стиль для счетчика элементов в корзине */
+.cart-counter {
+  position: absolute;
+  top: -8px; /* Регулируем позицию */
+  right: -8px;
+  background-color: #A26907; /* Золотистый цвет, подходящий под стиль проекта */
+  color: #ffffff;
+  border-radius: 50%; /* Делаем счетчик круглым */
+  padding: 5px 8px;
+  min-width: 26px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #FFF3E0; /* Легкая светлая рамка для контраста */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Эффект при наведении */
+.cart-container:hover .cart-counter {
+  transform: scale(1.1);
+}
